@@ -1,0 +1,48 @@
+body {
+  font-family: 'Figtree', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  background-color: hsl(47, 88%, 63%);
+}
+.card {
+  margin-right: auto;
+  margin-left: auto;
+  width: 300px;
+  border: 1px solid hsl(0, 0%, 7%);
+  padding: 15px;
+  border-radius: 20px;
+  background-color: hsl(0, 0%, 100%);
+}
+.card :hover {
+  cursor: pointer;
+}
+.card-content img {
+  width: 100%;
+  border-radius: 10px;
+}
+.card-pill {
+  display: inline-block;
+  padding: 5px 10px;
+  font-weight: 800;
+  background-color: hsl(47, 88%, 63%);
+  border-radius: 5px;
+}
+.card-date {
+  margin-top: 0;
+}
+.card-title {
+  font-weight: 800;
+}
+.card-subtitle {
+  line-height: 25px;
+  color: hsl(0, 0%, 50%);
+}
+.card-author {
+  display: flex;
+  gap: 10px;
+}
+.card-author img {
+  width: 50px;
+  height: 50px;
+}
