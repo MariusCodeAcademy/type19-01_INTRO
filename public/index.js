@@ -9,3 +9,9 @@ const sum3 = (a, b, c) => {
   return sum;
 };
 // marius fn end
+
+// aleksandra fn start
+function average(a, b, c) {
+  return (a + b + c) / 3;
+}
+// aleksandra fn end
