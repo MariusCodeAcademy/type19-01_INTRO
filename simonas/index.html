@@ -10,29 +10,36 @@
       href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <div class="container">
-      <div class="card">
+      <div class="card-container">
         <ul class="unlisted">
-          <li>
+          <li class="card">
             <img
+              class="card-img"
               src="./blog-preview-card-main/assets/images/illustration-article.svg"
               alt="design"
             />
-            <h3>Learning</h3>
-            <p>Published 21 Dec 2023</p>
-            <h1>HTML & CSS foundations</h1>
-            <p>
+            <h3 class="card-subtitle">Learning</h3>
+            <p class="card-text">Published 21 Dec 2023</p>
+            <a href="#" class="card-title--link">
+              <h1 class="card-title">HTML & CSS foundations</h1>
+            </a>
+
+            <p class="card-text--about">
               These languages are the backbone of every website, defining
               structure, content, and presentation
             </p>
-            <div>
+            <div class="card-footer">
               <img
+                class="card-footer--img"
                 src="./blog-preview-card-main/assets/images/image-avatar.webp"
                 alt="Greg Hooper"
               />
-              <h2>Greg Hooper</h2>
+              <h2 class="card-footer--title">Greg Hooper</h2>
             </div>
           </li>
         </ul>
