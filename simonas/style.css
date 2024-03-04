@@ -46,10 +46,7 @@ box-shadow: 10px 10px 6px
   color: gray;
   padding-bottom: 10px;
 }
-.unlisted {
-  margin: 0;
-  padding: 0;
-}
+
 .card {
  padding: 15px;
   margin-left: 0;
