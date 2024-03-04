@@ -1,7 +1,15 @@
 console.log('index.js');
 
 // cia sukeliam savo funkcijas
-/ marius fn start
+
+// audrius fn start
+const calcMultiplyArr = (numArr) => {
+  const result = numArr.reduce((acu, num) => num * acu);
+  return result;
+};
+// audrius fn end
+
+// marius fn start
 const sum3 = (a, b, c) => {
   const sum = a + b + c;
   console.log('sum: ', sum);
