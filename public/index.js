@@ -9,3 +9,9 @@ const sum3 = (a, b, c) => {
   return sum;
 };
 // marius fn end
+
+// tadas fn start
+function multiply(a, b) {
+  return a * b;
+}
+// tadas fn end
