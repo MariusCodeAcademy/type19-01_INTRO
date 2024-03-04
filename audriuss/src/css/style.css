@@ -1,0 +1,116 @@
+:root {
+  --clr-yellow: hsl(47, 88%, 63%);
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-grey: hsl(0, 0%, 50%);
+  --clr-black: #121212;
+
+  --fw-500: 500;
+  --fw-800: 800;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Figtree', sans-serif;
+  height: 100vh;
+  display: grid;
+  background-color: var(--clr-yellow);
+  justify-content: center;
+  align-items: center;
+}
+h1,
+h2 {
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+.card {
+  display: grid;
+  box-shadow: 0.5rem 0.5rem 2px 1px var(--clr-black);
+  max-width: 300px;
+  grid-template-columns: 1fr;
+  border-radius: 1rem;
+  padding: 1.25rem;
+  background-color: var(--clr-white);
+  border: 1px solid var(--clr-black);
+}
+
+.card-img-box {
+  height: 100%;
+  max-width: 100%;
+}
+
+.card-img {
+  border-radius: 1rem;
+
+  object-fit: cover;
+}
+
+.card-text-box {
+}
+
+.card-tag {
+  text-transform: capitalize;
+  justify-self: start;
+  display: inline-block;
+  font-weight: var(--fw-800);
+  margin-top: 1.5rem;
+  padding: 0.25rem 0.75rem;
+  background-color: var(--clr-yellow);
+  border-radius: 0.5rem;
+}
+
+.card-text-subheading {
+  font-weight: var(--fw-500);
+  margin-top: 1rem;
+  font-size: 0.875rem;
+}
+
+.card-text-heading {
+  margin-top: 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+
+  font-weight: var(--fw-800);
+}
+
+.card-text-p {
+  margin-top: 0.75rem;
+}
+
+.card-text-person {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  justify-items: center;
+  align-items: center;
+}
+
+.card-text-person-img-box {
+  width: 32px;
+  height: 32px;
+}
+
+.card-text-person-img {
+  border-radius: 100%;
+}
+
+.card-text-person-name {
+  font-weight: var(--fw-800);
+  font-size: 0.875rem;
+}
+
+@media (min-width: 600px) {
+  .card {
+    max-width: 360px;
+  }
+}
