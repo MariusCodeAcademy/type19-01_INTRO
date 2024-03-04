@@ -1,0 +1,7 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
+.age_calculator {
+  background-color: #fff;
+}
