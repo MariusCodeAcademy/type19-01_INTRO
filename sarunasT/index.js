@@ -1,8 +1,8 @@
 // funkcija kuri sudeda tris skaicius
 // atspausdina ir grazina rezultata
 
-function sumTriju() {
-  return 5 + 9 - 2;
+function sumTriju(a, b, c) {
+  return a + b - c;
 }
 
-console.log('sumTriju ===', sumTriju());
+const sum = sumTriju(3, 5, 4);
