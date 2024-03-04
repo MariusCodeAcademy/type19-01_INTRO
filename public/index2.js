@@ -9,3 +9,10 @@ function dovydoFunkcija(nr1, nr2, nr3) {
   return rez;
 }
 // dovydofn end
+
+// rokas fn start
+function sum(a, b, c) {
+  console.log(`skaiciu suma yra ${a + b + c}`);
+  return a + b + c;
+}
+// rokas fn end
