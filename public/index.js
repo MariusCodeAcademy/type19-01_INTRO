@@ -29,3 +29,10 @@ function sum(a, b, c) {
   return a + b + c;
 }
 // rokas fn end
+
+
+// aleksandra fn start
+function average(a, b, c) {
+  return (a + b + c) / 3;
+}
+// aleksandra fn end
