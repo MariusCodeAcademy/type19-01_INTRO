@@ -1,0 +1,90 @@
+.container {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  color: hsla(0, 0%, 100%, 0.75);
+  overflow: hidden;
+  margin-right: auto;
+  margin-left: auto;
+}
+.sedan {
+  background-color: hsl(31, 77%, 52%);
+  padding: 30px;
+}
+.sedan h2 {
+  font-size: 30px;
+  font-family: 'Big Shoulders Display', sans-serif;
+}
+.sedan p {
+  line-height: 24px;
+  font-family: 'Lexend Deca', sans-serif;
+  margin-bottom: 30px;
+}
+.button {
+  border: none;
+  padding: 12px 24px;
+  border-radius: 100px;
+  font-family: 'Lexend Deca', sans-serif;
+  margin-bottom: 25px;
+}
+.orange {
+  color: hsl(31, 77%, 52%);
+}
+.lgreen {
+  color: hsl(184, 100%, 22%);
+}
+.dgreen {
+  color: hsl(179, 100%, 13%);
+}
+.suvs {
+  background-color: hsl(184, 100%, 22%);
+  padding: 30px;
+}
+.suvs h2 {
+  font-size: 30px;
+  font-family: 'Big Shoulders Display', sans-serif;
+}
+.suvs p {
+  line-height: 24px;
+  font-family: 'Lexend Deca', sans-serif;
+  margin-bottom: 30px;
+}
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+  padding: 30px;
+}
+.luxury h2 {
+  font-size: 30px;
+  font-family: 'Big Shoulders Display', sans-serif;
+}
+.luxury p {
+  line-height: 24px;
+  font-family: 'Lexend Deca', sans-serif;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1000px) {
+  .container {
+    flex-direction: row;
+    width: 900px;
+    border-radius: 8px;
+  }
+  .sedan p {
+    line-height: 1.7rem;
+  }
+  .sedan button {
+    margin-top: 30px;
+  }
+  .suvs p {
+    line-height: 1.7rem;
+  }
+  .suvs button {
+    margin-top: 30px;
+  }
+  .luxury p {
+    line-height: 1.7rem;
+  }
+  .luxury button {
+    margin-top: 30px;
+  }
+}
