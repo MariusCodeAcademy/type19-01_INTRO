@@ -1,0 +1,23 @@
+:root {
+  --var-primary-purple: hsl(259, 100%, 65%);
+  --var-primary-red: hsl(0, 100%, 67%);
+}
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+.flex {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 30px;
+}
+input {
+  font-size: 36px;
+  width: 70%;
+  border: 1px solid #b9b8b8;
+  border-radius: 10px;
+}
+.card {
+  border: 1px solid black;
+  padding-left: 20px;
+}
