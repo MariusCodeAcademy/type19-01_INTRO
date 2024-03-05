@@ -1,0 +1,39 @@
+body {
+  background-color: hsl(218, 23%, 16%);
+  font-family: 'Manrope', sans-serif;
+}
+.card {
+  background-color: hsl(217, 19%, 24%);
+  width: 330px;
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 200px;
+  position: relative;
+}
+.adviceId {
+  color: hsl(150, 100%, 66%);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-size: 14px;
+}
+.advice {
+  color: hsl(193, 38%, 86%);
+  font-size: 25px;
+}
+.pause {
+  padding-bottom: 60px;
+}
+.button {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 100px;
+  border: none;
+  left: calc(50% - 30px);
+  bottom: calc(0px - 30px);
+  background-color: hsl(150, 100%, 66%);
+}
