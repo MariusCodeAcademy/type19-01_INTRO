@@ -29,11 +29,11 @@ export default function NewArivals() {
       {/* virsutinis uzrasas */}
       {/* korteles */}
       <div className='flex overflow-hidden xl:gap-6 gap-2'>
-        <Card price={'$349.99'} img={'/public/HomePageImages/5.png'} />
-        <Card price={'$299.99'} img={'/public/HomePageImages/6.png'} />
-        <Card price={'$79.99'} img={'/public/HomePageImages/3.png'} />
-        <Card price={'$224.99'} img={'/public/HomePageImages/4.png'} />
-        <Card price={'$149.99'} img={'/public/HomePageImages/1.png'} />
+        <Card price={'$349.99'} img={'/public/HomePageImages/5.png'} rating={5} />
+        <Card price={'$299.99'} img={'/public/HomePageImages/6.png'} rating={2} />
+        <Card price={'$79.99'} img={'/public/HomePageImages/3.png'} rating={3} />
+        <Card price={'$224.99'} img={'/public/HomePageImages/4.png'} rating={4} />
+        <Card price={'$149.99'} img={'/public/HomePageImages/1.png'} rating={5} />
       </div>
       {/* korteles */}
     </div>
