@@ -1,4 +1,4 @@
-import React from 'react';
+import RatingsST from '../RatingsST';
 
 export default function OneCardBestSeller({ name, price }: { name: string; price: string }) {
   return (
@@ -11,11 +11,12 @@ export default function OneCardBestSeller({ name, price }: { name: string; price
       </div>
       <div className='content mt-2'>
         <div className='flex gap-1 '>
+          <RatingsST />
+          {/* <img className='h-4 w-4' src='/public/Star Fill.png' alt='star icon' />
           <img className='h-4 w-4' src='/public/Star Fill.png' alt='star icon' />
           <img className='h-4 w-4' src='/public/Star Fill.png' alt='star icon' />
           <img className='h-4 w-4' src='/public/Star Fill.png' alt='star icon' />
-          <img className='h-4 w-4' src='/public/Star Fill.png' alt='star icon' />
-          <img className='h-4 w-4' src='/public/Star Fill.png' alt='star icon' />
+          <img className='h-4 w-4' src='/public/Star Fill.png' alt='star icon' /> */}
         </div>
         <h3 className='text-sm font-semibold mt-1 mb-1'>{name}</h3>
         <p className='text-xs font-semibold'>$ {price}</p>
