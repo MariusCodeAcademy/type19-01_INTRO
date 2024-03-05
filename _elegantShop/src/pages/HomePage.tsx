@@ -1,4 +1,4 @@
-//
+import { ShopCollection } from '../components/homePage/ShopCollection';
 
 import NewArivals from '../components/homePage/NewArivals';
 
@@ -8,6 +8,7 @@ function HomePage() {
       <h1 className='text-2xl'>Hero</h1>
       <h1>Slider</h1>
       <NewArivals />
+      <ShopCollection />
     </div>
   );
 }
