@@ -1,6 +1,7 @@
-import RatingsST from '../RatingsST';
+import PricingTs from '../UI/PricingTs';
+import RatingsST from '../UI/RatingsST';
 
-export default function OneCardBestSeller({ name, price }: { name: string; price: string }) {
+export default function OneCardBestSeller({ name, price, soldPrice }: { name: string; price: number; soldPrice?: number }) {
   return (
     <div className='w-40 h-72'>
       <div className='Elements w-44 h-52 relative'>
@@ -19,7 +20,7 @@ export default function OneCardBestSeller({ name, price }: { name: string; price
           <img className='h-4 w-4' src='/public/Star Fill.png' alt='star icon' /> */}
         </div>
         <h3 className='text-sm font-semibold mt-1 mb-1'>{name}</h3>
-        <p className='text-xs font-semibold'>$ {price}</p>
+        <PricingTs price={price} soldPrice={soldPrice} />
       </div>
     </div>
   );
