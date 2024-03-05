@@ -1,4 +1,4 @@
-import RatingsST from '../RatingsST';
+import RatingsST from '../UI/RatingsST';
 
 export default function OneCardBestSeller({ name, price }: { name: string; price: string }) {
   return (
