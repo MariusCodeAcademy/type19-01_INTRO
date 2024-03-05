@@ -1,0 +1,22 @@
+html {
+  --BrightOrange: hsl(31, 77%, 52%);
+  --DarkCyan: hsl(184, 100%, 22%);
+  --VeryDarkCyan: hsl(179, 100%, 13%);
+  --Paragraphs: hsla(0, 0%, 100%, 0.75);
+  --backgroundHeadingsButtons: hsl(0, 0%, 95%);
+}
+
+.container {
+  max-width: 1440px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.one-card-container {
+  padding: 50px 50px;
+  color: var(--Paragraphs);
+}
+.sedans {
+  background-color: var(--BrightOrange);
+}
+img {
+}
