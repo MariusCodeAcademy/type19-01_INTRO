@@ -7,7 +7,6 @@ import Brands from './components/Brands';
 function App() {
   return (
     <div className=''>
-      {/* Header */}
       <Routes>
         <Route path='/' element={<HomePage />}></Route>
       </Routes>
