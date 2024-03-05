@@ -4,15 +4,17 @@ import NewArivals from '../components/homePage/NewArivals';
 
 import BestSellerPage from '../components/bestSellerComp/BestSellerPage';
 
+import Hero from "../components/homePage/Hero";
+
 function HomePage() {
   return (
-    <div>
-      <h1 className='text-2xl'>Hero</h1>
-      <h1>Slider</h1>
+      <div>
+        <Hero />
+        <h1>Slider</h1>
       <BestSellerPage />
       <NewArivals />
       <ShopCollection />
-    </div>
+      </div>
   );
 }
 
