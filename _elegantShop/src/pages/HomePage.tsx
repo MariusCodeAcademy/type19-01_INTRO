@@ -1,4 +1,4 @@
-import { ShopCollection } from '../components/homePage/ShopCollection';
+import { ShopCollection } from '../components/homePage/ShopCollection/ShopCollection';
 
 import NewArivals from '../components/homePage/NewArivals';
 
