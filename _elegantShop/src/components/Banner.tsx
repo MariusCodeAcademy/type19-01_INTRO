@@ -25,24 +25,12 @@ const Banner = () => {
         >
           Hurry up! 40% OFF
         </h1>
-        <p
-          className='text-gray-700 mb-4'
-          style={{
-            paddingLeft: '32px',
-            paddingRight: '32px',
-          }}
-        >
+        <p className='text-gray-700 mb-4 ps-6'>
           Thousands of high tech are waiting for you
         </p>
 
-        <div
-          style={{
-            paddingLeft: '32px',
-            paddingRight: '32px',
-          }}
-          className='  flex flex-col sm:flex-row justify-between items-center mb-4'
-        >
-          <div className='mb-4'>
+        <div className='  flex flex-col sm:flex-row justify-between items-center mb-4'>
+          <div className='mb-4 p-6 '>
             <h3 className='mr-2 mb-4'>Offer expires in:</h3>
             <div className='flex items-center gap-2'>
               <div className='mr-2 mb-6 mt-4'>
