@@ -1,0 +1,44 @@
+.mobile-footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.links ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.social-media {
+    margin-top: 20px;
+}
+
+.social-media a {
+    margin-right: 10px;
+}
+
+.legal ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.legal ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.copyright {
+    margin-top: 20px;
+}
