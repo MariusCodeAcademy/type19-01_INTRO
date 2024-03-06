@@ -28,7 +28,7 @@ export default function NewArivals() {
       </div>
       {/* virsutinis uzrasas */}
       {/* korteles */}
-      <div className='flex overflow-hidden xl:gap-6 gap-2'>
+      <div className='flex overflow-hidden overflow-x-auto xl:gap-6 gap-2'>
         <Card price={'$349.99'} img={'/public/HomePageImages/5.png'} rating={5} />
         <Card price={'$299.99'} img={'/public/HomePageImages/6.png'} rating={2} />
         <Card price={'$79.99'} img={'/public/HomePageImages/3.png'} rating={3} />
