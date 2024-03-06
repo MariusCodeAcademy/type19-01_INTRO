@@ -2,7 +2,7 @@ import IceBoxSinglerCard from './IceBoxSinglerCard';
 
 export default function IceBoxCard() {
   return (
-    <div className=' grid m-8 gap-2 gap-y-6 grid-cols-2'>
+    <div className=' grid m-8 gap-2 gap-y-6 grid-cols-2 md:grid-cols-4 md:ml-40 md:mr-40 md:gap-6  '>
       <IceBoxSinglerCard
         img='/public/HomePageImages/IceBoxImg/Vector.png'
         title='Free Shipping'
