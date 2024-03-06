@@ -18,20 +18,14 @@ type DurationReturnType = {
 const TimeUntilMK = ({ timeUntil, title }: TimeUntilMKProps) => {
   const [timeNow, setTimeNow] = useState(new Date());
 
-  // const date1 = dayjs();
-  // const date2 = dayjs(timeUntil);
-  // const diff = date2.diff(date1);
-  // const diffDays = date2.diff(date1, 'days');
-  // console.log('diffDays ===', diffDays);
-  // console.log('diff ===', diff);
-
-  // const fromNow = dayjs(timeUntil).fromNow();
-  // console.log('fromNow ===', fromNow);
-  // // jei skaiciuojam skirtuma tarp 2 datu
-  // // pasiversti abi data i ms ir atimti is vieno kita
-
-  // const duration = dayjs.duration(date2.diff(date1));
-  // console.log('duration ===', duration);
+  const date1 = dayjs(timeNow.toISOString());
+  const date2 = dayjs(timeUntil);
+  // convert durration to days, hours, minutes and seconds between date1 and date2 with dayjs
+  const duration = dayjs.duration(date2.diff(date1));
+  const days = Math.floor(duration.asDays());
+  const hours = duration.hours();
+  const minutes = duration.minutes();
+  const seconds = duration.seconds();
 
   const durationToTime = (timeString: string): DurationReturnType => {
     const untilDate = new Date(timeString);
@@ -65,9 +59,9 @@ const TimeUntilMK = ({ timeUntil, title }: TimeUntilMKProps) => {
 
   // console.log('rez ===', rez);
 
-  const hours = rez.hours;
-  const minutes = rez.minutes;
-  const seconds = rez.seconds;
+  // const hours = rez.hours;
+  // const minutes = rez.minutes;
+  // const seconds = rez.seconds;
 
   const tick = () => {
     setTimeNow(new Date());
@@ -93,7 +87,7 @@ const TimeUntilMK = ({ timeUntil, title }: TimeUntilMKProps) => {
         <div className='flex items-center gap-2'>
           <div className='mr-2 mb-6 mt-4'>
             <span className='font-bold bg-white  text-3xl p-4' id='days'>
-              {rez.days.toString().padStart(2, '0')}
+              {days.toString().padStart(2, '0')}
             </span>{' '}
             <p className=' mt-4 text-sm'>Days</p>
           </div>
