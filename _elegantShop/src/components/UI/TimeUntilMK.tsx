@@ -37,16 +37,6 @@ const TimeUntilMK = ({ timeUntil, title }: TimeUntilMKProps) => {
     const secFull = secLiekana * 60; // 34.545
     const sec = Math.floor(secFull); // 34
 
-    // console.log('sec ===', sec);
-
-    // console.log('minutes ===', minutes);
-    // console.log('minutesFull ===', minutesFull);
-
-    // console.log('hoursFull ===', hoursFull);
-    // console.log('hours ===', hours);
-    // console.log('dienuLiekana ===', valanduLiekana);
-    // console.log(' daysFull; ===', daysFull);
-    // console.log('days ===', days);
     return {
       days,
       hours,
@@ -56,7 +46,7 @@ const TimeUntilMK = ({ timeUntil, title }: TimeUntilMKProps) => {
   };
   const rez = durationToTime(timeUntil);
 
-  console.log('rez ===', rez);
+  // console.log('rez ===', rez);
 
   const hours = rez.hours;
   const minutes = rez.minutes;
@@ -77,7 +67,7 @@ const TimeUntilMK = ({ timeUntil, title }: TimeUntilMKProps) => {
     };
   }, []);
 
-  console.log('timeNow ===', timeNow);
+  // console.log('timeNow ===', timeNow);
 
   return (
     <div className=' bg-yellow-300  flex flex-col sm:flex-row justify-between items-center mb-4'>
