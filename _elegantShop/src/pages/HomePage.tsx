@@ -9,6 +9,7 @@ import Hero from '../components/homePage/Hero';
 
 import Banner from '../components/Banner';
 import TimeUntilMK from '../components/UI/TimeUntilMK';
+import Instagram from '../components/instagram/Instagram';
 
 function HomePage() {
   return (
@@ -21,6 +22,7 @@ function HomePage() {
       <NewArivals />
       <ShopCollection />
       <TimerST />
+      <Instagram />
     </div>
   );
 }
