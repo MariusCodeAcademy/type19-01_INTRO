@@ -3,12 +3,12 @@ import { ShopCollection } from '../components/homePage/ShopCollection/ShopCollec
 import NewArivals from '../components/homePage/NewArivals';
 
 import BestSellerPage from '../components/bestSellerComp/BestSellerPage';
-import TimerST from '../components/TimerST/TimerST';
 
 import Hero from '../components/homePage/Hero';
 
 import Banner from '../components/Banner';
 import TimeUntilMK from '../components/UI/TimeUntilMK';
+import IceBoxCard from '../components/cards/IceBoxCard';
 
 function HomePage() {
   return (
@@ -20,7 +20,7 @@ function HomePage() {
       <Banner />
       <NewArivals />
       <ShopCollection />
-      <TimerST />
+      <IceBoxCard />
     </div>
   );
 }
