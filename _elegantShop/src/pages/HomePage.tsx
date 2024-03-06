@@ -3,6 +3,7 @@ import { ShopCollection } from '../components/homePage/ShopCollection/ShopCollec
 import NewArivals from '../components/homePage/NewArivals';
 
 import BestSellerPage from '../components/bestSellerComp/BestSellerPage';
+import TimerST from '../components/TimerST/TimerST';
 
 import Hero from '../components/homePage/Hero';
 
@@ -17,6 +18,7 @@ function HomePage() {
       <Banner />
       <NewArivals />
       <ShopCollection />
+      <TimerST />
     </div>
   );
 }
