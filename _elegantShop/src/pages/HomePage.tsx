@@ -14,7 +14,7 @@ function HomePage() {
   return (
     <div>
       <Hero />
-      <TimeUntilMK />
+      <TimeUntilMK timeUntil='2024-12-31' title='New Year:' />
       <h1>Slider</h1>
       <BestSellerPage />
       <Banner />
