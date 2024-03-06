@@ -1,4 +1,9 @@
 import React, { useEffect, useState } from 'react';
+import dayjs from 'dayjs';
+import relativeTime from 'dayjs/plugin/relativeTime';
+import duration from 'dayjs/plugin/duration';
+dayjs.extend(relativeTime);
+dayjs.extend(duration);
 
 type TimeUntilMKProps = {
   title: string;
@@ -13,8 +18,20 @@ type DurationReturnType = {
 const TimeUntilMK = ({ timeUntil, title }: TimeUntilMKProps) => {
   const [timeNow, setTimeNow] = useState(new Date());
 
-  // jei skaiciuojam skirtuma tarp 2 datu
-  // pasiversti abi data i ms ir atimti is vieno kita
+  // const date1 = dayjs();
+  // const date2 = dayjs(timeUntil);
+  // const diff = date2.diff(date1);
+  // const diffDays = date2.diff(date1, 'days');
+  // console.log('diffDays ===', diffDays);
+  // console.log('diff ===', diff);
+
+  // const fromNow = dayjs(timeUntil).fromNow();
+  // console.log('fromNow ===', fromNow);
+  // // jei skaiciuojam skirtuma tarp 2 datu
+  // // pasiversti abi data i ms ir atimti is vieno kita
+
+  // const duration = dayjs.duration(date2.diff(date1));
+  // console.log('duration ===', duration);
 
   const durationToTime = (timeString: string): DurationReturnType => {
     const untilDate = new Date(timeString);
