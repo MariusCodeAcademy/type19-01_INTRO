@@ -5,3 +5,4 @@ const SingleItemPage = () => {
 };
 
 export default SingleItemPage;
+
