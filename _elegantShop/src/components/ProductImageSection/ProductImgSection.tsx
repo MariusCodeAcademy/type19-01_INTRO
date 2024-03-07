@@ -6,11 +6,11 @@ import 'swiper/css/navigation';
 import OnPictureSpan from '../UI/OnPictureSpan';
 export default function ProductImgSection() {
   return (
-    <div className='my-4 mx-9'>
+    <div className=' container  md:w-full '>
       <div>
-        <p className='text-base mb-4 mt-4'>Home &gt; Shop &gt; Living Room &gt; Product</p>
+        <p className='text-base mb-4 mt-4 xl:text-xl'>Home &gt; Shop &gt; Living Room &gt; Product</p>
       </div>
-      <Swiper navigation={true} modules={[Navigation, FreeMode, Thumbs]}>
+      <Swiper className='mb-6' navigation={true} modules={[Navigation, FreeMode, Thumbs]}>
         <SwiperSlide>
           <div className='relative group'>
             <img className='w-full' src='/SingleShopPageImg/ProductImg/Paste image.png' alt='' />
@@ -55,7 +55,7 @@ export default function ProductImgSection() {
         freeMode={true}
         watchSlidesProgress={true}
         modules={[FreeMode, Navigation, Thumbs]}
-        className='mySwiper w-full hidden md:block'
+        className='mySwiper hidden sm:block'
       >
         <SwiperSlide>
           <img src='/SingleShopPageImg/ProductImg/Stalas 2.png' />
