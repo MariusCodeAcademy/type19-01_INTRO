@@ -1,5 +1,11 @@
+import ContactUsCards from '../components/ContactUs/ContactUsCards';
+
 function ContactUs() {
-  return <div>ContactUs</div>;
+  return (
+    <div>
+      <ContactUsCards />
+    </div>
+  );
 }
 
 export default ContactUs;
