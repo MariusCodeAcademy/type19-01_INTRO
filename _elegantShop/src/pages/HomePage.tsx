@@ -4,6 +4,7 @@ import NewArivals from '../components/homePage/NewArivals';
 
 import BestSellerPage from '../components/bestSellerComp/BestSellerPage';
 import TimerST from '../components/TimerST/TimerST';
+import ContactForm from '../components/ContactFormST/ContactForm';
 
 function HomePage() {
   return (
@@ -14,6 +15,7 @@ function HomePage() {
       <NewArivals />
       <ShopCollection />
       <TimerST />
+      <ContactForm />
     </div>
   );
 }
