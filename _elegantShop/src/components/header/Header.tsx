@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import HeaderMenu from './HeaderMenu';
+import { NavLink } from 'react-router-dom';
 // import HeaderMenu from './HeaderMenu';
 
 export default function Header() {
@@ -26,12 +27,16 @@ export default function Header() {
           </div>
           <div id='hiddenOnSmall' className='md:flex hidden sm:flex'>
             <ul className='flex items-center gap-4'>
-              <li className='  font-semibold'>Home</li>
+              <li className='  font-semibold'>
+                <NavLink to={'/'}>Home</NavLink>
+              </li>
               <li className='  font-semibold flex justify-between'>
                 Shop <img src='/img/header/arrow-down.svg' alt='view more shop items'></img>
               </li>
-              <li className='  font-semibold flex justify-between'>
-                Product <img src='/img/header/arrow-down.svg' alt='view more shop items'></img>
+              <li className='  '>
+                <NavLink to={'/shop/1'} className='font-semibold flex justify-between'>
+                  Product <img src='/img/header/arrow-down.svg' alt='view more shop items'></img>
+                </NavLink>
               </li>
               <li className='  font-semibold'>Constact Us</li>
             </ul>

@@ -18,7 +18,7 @@ function HomePage() {
       <Banner />
       <NewArivals />
       <ShopCollection />
-      <TimerST />
+      {/* <TimerST /> */}
       <IceBoxCard />
       <Instagram />
     </div>
