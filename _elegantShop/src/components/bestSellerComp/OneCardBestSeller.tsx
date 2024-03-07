@@ -10,10 +10,10 @@ type BestSellerProps = {
 
 export default function OneCardBestSeller({ name, price, soldPrice, img }: BestSellerProps) {
   return (
-    <div className='lg:w-[262px] lg:h-[459px] sm:w-[152px] sm:lg:h-[281px] '>
-      <div className='Elements w-full relative'>
-        <img className='lg:w-[262px] sm:w-[152px] lg:h-[349px] sm:h-[203px] bg-red-50 object-contain' src={img} alt='sony casque' />
-        <div className='pill absolute top-5 left-5 px-3 py-1  bg-white rounded'>
+    <div className=''>
+      <div className='Elements relative'>
+        <img className='bg-red-50 object-contain w-full h-60' src={img} alt='sony casque' />
+        <div className='pill absolute top-4 left-4 px-3 py-1  bg-white rounded'>
           <p className='font-bold text-base	'>HOT</p>
         </div>
       </div>
