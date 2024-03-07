@@ -3,7 +3,11 @@ import HeaderMenu from './HeaderMenu';
 import { NavLink } from 'react-router-dom';
 // import HeaderMenu from './HeaderMenu';
 
-export default function Header() {
+type HeaderProps = {
+  main?: boolean;
+};
+
+export default function Header({ main }: HeaderProps) {
   const [menuClicked, setMenuClicked] = useState(false);
 
   function handleMenuClick() {
@@ -13,7 +17,8 @@ export default function Header() {
     <>
       {menuClicked && <HeaderMenu onMenuClick={handleMenuClick} />}
       {!menuClicked && (
-        <header className='flex z-50 relative  px-8 py-4 justify-between bg-main'>
+        <header
+          className={`flex z-50 relative  px-8 py-4 justify-between ${main ? 'bg-main' : ''} `}>
           <div className='flex '>
             <img
               onClick={handleMenuClick}
