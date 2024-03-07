@@ -9,7 +9,6 @@ import ContactUs from './pages/ContactUs';
 function App() {
   return (
     <div className=''>
-      <Header />
       <Routes>
         <Route path='/' element={<HomePage />}></Route>
         <Route path='/shop/:id' element={<SingleItemPage />}></Route>

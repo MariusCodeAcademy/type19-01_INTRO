@@ -3,7 +3,11 @@ import HeaderMenu from './HeaderMenu';
 import { NavLink } from 'react-router-dom';
 // import HeaderMenu from './HeaderMenu';
 
-export default function Header() {
+type HeaderProps = {
+  main?: boolean;
+};
+
+export default function Header({ main }: HeaderProps) {
   const [menuClicked, setMenuClicked] = useState(false);
 
   function handleMenuClick() {
@@ -13,7 +17,8 @@ export default function Header() {
     <>
       {menuClicked && <HeaderMenu onMenuClick={handleMenuClick} />}
       {!menuClicked && (
-        <header className='flex  px-8 py-4 justify-between bg-[rgba(255,170,0,0.64)]'>
+        <header
+          className={`flex z-50 relative  px-8 py-4 justify-between ${main ? 'bg-main' : ''} `}>
           <div className='flex '>
             <img
               onClick={handleMenuClick}
@@ -31,22 +36,11 @@ export default function Header() {
                 <NavLink to={'/'}>Home</NavLink>
               </li>
               <li className='  font-semibold flex justify-between'>
-                Shop{' '}
-                <img
-                  src='/img/header/arrow-down.svg'
-                  alt='view more shop items'
-                ></img>
+                Shop <img src='/img/header/arrow-down.svg' alt='view more shop items'></img>
               </li>
               <li className='  '>
-                <NavLink
-                  to={'/shop/1'}
-                  className='font-semibold flex justify-between'
-                >
-                  Product{' '}
-                  <img
-                    src='/img/header/arrow-down.svg'
-                    alt='view more shop items'
-                  ></img>
+                <NavLink to={'/shop/1'} className='font-semibold flex justify-between'>
+                  Product <img src='/img/header/arrow-down.svg' alt='view more shop items'></img>
                 </NavLink>
               </li>
               <li className='  font-semibold'>
