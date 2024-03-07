@@ -1,4 +1,4 @@
-export const itemArr = [
+export const itemsArr = [
   {
     id: 1,
     name: 'Sony - WH-1000XM5 Wireless ',
@@ -37,7 +37,7 @@ export const itemArr = [
     rating: 5,
     category: 'Earbuds',
     price: 249.99,
-    image: '/public/imgBest Seller/penktaAusine.png',
+    image: '/imgBest Seller/penktaAusine.png',
   },
   {
     id: 6,
@@ -45,7 +45,7 @@ export const itemArr = [
     rating: 5,
     category: 'Truly Wireless Sports',
     price: 179.95,
-    image: '/public/imgBest Seller/sestaAusine.png',
+    image: '/imgBest Seller/sestaAusine.png',
   },
   {
     id: 7,
@@ -53,7 +53,7 @@ export const itemArr = [
     rating: 5,
     category: 'Noise Canceling',
     price: 349.0,
-    image: '/public/imgBest Seller/septintaAusine.png',
+    image: '/imgBest Seller/septintaAusine.png',
   },
   {
     id: 8,
@@ -61,6 +61,6 @@ export const itemArr = [
     rating: 5,
     category: 'Noise Canceling',
     price: 349.99,
-    image: '/public/imgBest Seller/septintaAusine.png',
+    image: '/imgBest Seller/astuntaAusine.png',
   },
 ];
