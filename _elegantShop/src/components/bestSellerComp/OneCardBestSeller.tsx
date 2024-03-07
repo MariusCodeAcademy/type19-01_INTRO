@@ -12,7 +12,7 @@ export default function OneCardBestSeller({ name, price, soldPrice, img }: BestS
   return (
     <div className=''>
       <div className='Elements relative'>
-        <img className='bg-red-50 object-contain h-full' src={img} alt='sony casque' />
+        <img className='bg-red-50 object-contain w-full h-60' src={img} alt='sony casque' />
         <div className='pill absolute top-4 left-4 px-3 py-1  bg-white rounded'>
           <p className='font-bold text-base	'>HOT</p>
         </div>
