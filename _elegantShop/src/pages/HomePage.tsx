@@ -8,6 +8,7 @@ import Instagram from '../components/instagram/Instagram';
 import IceBoxCard from '../components/cards/IceBoxCard';
 import SwiperDemo from '../components/UI/SwiperDemo';
 import TimerST from '../components/TimerST/TimerST';
+import NewsLetter from '../components/NewsLetter';
 
 function HomePage() {
   return (
@@ -22,6 +23,7 @@ function HomePage() {
       {/* <TimerST /> */}
       <IceBoxCard />
       <Instagram />
+      <NewsLetter />
     </div>
   );
 }
