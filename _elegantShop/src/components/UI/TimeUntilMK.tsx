@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 type TimeUntilMKProps = {
   title: string;
   timeUntil: string;
+  background?: string;
 };
 type DurationReturnType = {
   days: number;
@@ -10,7 +11,7 @@ type DurationReturnType = {
   minutes: number;
   seconds: number;
 };
-const TimeUntilMK = ({ timeUntil, title }: TimeUntilMKProps) => {
+const TimeUntilMK = ({ timeUntil, title, background = 'bg-yellow-300' }: TimeUntilMKProps) => {
   const [timeNow, setTimeNow] = useState(new Date());
 
   // jei skaiciuojam skirtuma tarp 2 datu
@@ -70,33 +71,33 @@ const TimeUntilMK = ({ timeUntil, title }: TimeUntilMKProps) => {
   // console.log('timeNow ===', timeNow);
 
   return (
-    <div className=' bg-yellow-300  flex flex-col sm:flex-row justify-between items-center mb-4'>
+    <div className={`${background}  flex flex-col sm:flex-row justify-between items-center mb-4`}>
       <div className='mb-4 p-6 '>
         <h3 className='mr-2 mb-4'>{title} </h3>
         <div className='flex items-center gap-2'>
           <div className='mr-2 mb-6 mt-4'>
-            <span className='font-bold bg-white  text-3xl p-4' id='days'>
+            <span className='font-bold bg-gray-100  text-3xl p-4' id='days'>
               {rez.days.toString().padStart(2, '0')}
             </span>{' '}
-            <p className=' mt-4 text-sm'>Days</p>
+            <p className=' mt-4 text-sm text-center'>Days</p>
           </div>
           <div className='mr-2 mb-6 mt-4'>
-            <span className='font-bold bg-white  text-3xl p-4' id='hours'>
+            <span className='font-bold bg-gray-100  text-3xl p-4' id='hours'>
               {hours.toString().padStart(2, '0')}
             </span>{' '}
-            <p className=' mt-4 text-sm'>Hours</p>
+            <p className=' mt-4 text-sm text-center'>Hours</p>
           </div>
           <div className='mr-2 mb-6 mt-4'>
-            <span className='font-bold bg-white  text-3xl p-4' id='minutes'>
+            <span className='font-bold bg-gray-100  text-3xl p-4' id='minutes'>
               {minutes.toString().padStart(2, '0')}
             </span>{' '}
-            <p className=' mt-4 text-sm'>Minutes</p>
+            <p className=' mt-4 text-sm text-center'>Minutes</p>
           </div>
           <div className='mr-2 mb-6 mt-4'>
-            <span className='font-bold bg-white  text-3xl p-4' id='seconds'>
+            <span className='font-bold bg-gray-100  text-3xl p-4' id='seconds'>
               {seconds.toString().padStart(2, '0')}
             </span>{' '}
-            <p className=' mt-4 text-sm'>Seconds</p>
+            <p className=' mt-4 text-sm text-center'>Seconds</p>
           </div>
         </div>
       </div>
