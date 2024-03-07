@@ -13,13 +13,13 @@ function HomePage() {
   return (
     <div>
       <Hero />
-      <TimeUntilMK timeUntil='2024-12-31' title='New Year:' />
+      <TimeUntilMK timeUntil='2024-12-31' title='New Year: ' />
       <SwiperDemo />
       <BestSellerPage />
       <Banner />
       <NewArivals />
       <ShopCollection />
-      {/* <TimerST /> */}
+      <TimerST />
       <IceBoxCard />
       <Instagram />
     </div>
