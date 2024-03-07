@@ -22,7 +22,8 @@ export default function SwiperDemo() {
         pagination={{ clickable: true }}
         scrollbar={{ draggable: true }}
         onSwiper={(swiper) => console.log(swiper)}
-        onSlideChange={() => console.log('slide change')}>
+        onSlideChange={() => console.log('slide change')}
+      >
         <SwiperSlide>
           <img src='\images\logo 01.svg' alt='logo' className='' />
         </SwiperSlide>

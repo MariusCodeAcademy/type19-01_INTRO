@@ -3,7 +3,11 @@ import HeaderMenu from './HeaderMenu';
 import { NavLink } from 'react-router-dom';
 // import HeaderMenu from './HeaderMenu';
 
-export default function Header() {
+type HeaderProps = {
+  main?: boolean;
+};
+
+export default function Header({ main }: HeaderProps) {
   const [menuClicked, setMenuClicked] = useState(false);
 
   function handleMenuClick() {
@@ -13,7 +17,8 @@ export default function Header() {
     <>
       {menuClicked && <HeaderMenu onMenuClick={handleMenuClick} />}
       {!menuClicked && (
-        <header className='flex  px-8 py-4 justify-between bg-[rgba(255,170,0,0.64)]'>
+        <header
+          className={`flex z-50 relative  px-8 py-4 justify-between ${main ? 'bg-main' : ''} `}>
           <div className='flex '>
             <img
               onClick={handleMenuClick}
@@ -38,7 +43,9 @@ export default function Header() {
                   Product <img src='/img/header/arrow-down.svg' alt='view more shop items'></img>
                 </NavLink>
               </li>
-              <li className='  font-semibold'>Constact Us</li>
+              <li className='  font-semibold'>
+                <NavLink to={'/contact-us'}>Contact Us</NavLink>
+              </li>
             </ul>
           </div>
           <div className='flex gap-1'>

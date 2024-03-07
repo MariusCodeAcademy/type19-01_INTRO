@@ -9,7 +9,7 @@ export default function Instagram() {
           <a href='#'>@3legant_Official</a>
         </h4>
       </div>
-      <div className='w-[310px] ml-auto mr-auto flex flex-col gap-5'>
+      <div className='w-[310px] ml-auto mr-auto flex flex-col gap-5 md:w-full md:grid md:grid-cols-2 lg:grid-cols-4 '>
         <img className='w-full' src='/img/pirmas.jpg' alt='@3legant_Official' />
         <img className='w-full' src='/img/antras.jpg' alt='@3legant_Official' />
         <img className='w-full' src='/img/trecias.jpg' alt='@3legant_Official' />

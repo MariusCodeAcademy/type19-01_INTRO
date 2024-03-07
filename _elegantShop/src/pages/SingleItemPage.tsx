@@ -1,12 +1,15 @@
 //
-
 import ProductImgSection from '../components/ProductImageSection/ProductImgSection';
+import Header from '../components/header/Header';
+import ProdInfo from '../components/productInfo/ProdInfo';
+
 
 const SingleItemPage = () => {
   return (
-    <div>
-      <h1>Single Item Page</h1>
+    <div> 
+      <Header />
       <ProductImgSection />
+      <ProdInfo />
     </div>
   );
 };
