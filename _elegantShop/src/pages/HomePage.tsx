@@ -7,6 +7,7 @@ import TimeUntilMK from '../components/UI/TimeUntilMK';
 import Instagram from '../components/instagram/Instagram';
 import IceBoxCard from '../components/cards/IceBoxCard';
 import SwiperDemo from '../components/UI/SwiperDemo';
+import TimerST from '../components/TimerST/TimerST';
 
 function HomePage() {
   return (
