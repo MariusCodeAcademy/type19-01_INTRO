@@ -9,7 +9,7 @@ type CardProps = {
 export default function Card({ img, price, rating }: CardProps) {
   return (
     <div className=''>
-      <div className='relative group min-w-[231px]  mb-8 h-[412px] xl:w-[262px] xl:mb-12 xl:h-[459px]  '>
+      <div className='relative group min-w-[231px] mb-8 h-[412px] xl:w-[262px] xl:mb-12 xl:h-[459px]'>
         <img className='w-full' src={img} alt='product picture' />
         <button className='border absolute top-3 right-3 hidden group-hover:block xl:right-4 p-1 shadow-md rounded-full bg-white'>
           <img src='/public/HomePageImages/Line.png' alt='press to make your favorite' />

@@ -1,8 +1,8 @@
+//
 
-function SingleItemPage() {
-  return (
-    <div>SingleItemPage</div>
-  )
-}
+const SingleItemPage = () => {
+  return <div>SingleItemPage</div>;
+};
 
-export default SingleItemPage
+export default SingleItemPage;
+
