@@ -1,8 +1,9 @@
+import PriceTJ from '../../UI/PriceTJ';
 import RatingTJ from '../../UI/RatingTJ';
 
 type CardProps = {
   img: string;
-  price: string;
+  price: number;
   rating: number;
 };
 
@@ -21,7 +22,7 @@ export default function Card({ img, price, rating }: CardProps) {
         <RatingTJ rating={rating} />
         <div>
           <h1 className='text-base font-semibold '>Skullcandy - Crusher anc 2 wireless headphones</h1>
-          <p className='mt-1 text-sm font-semibold'>{price}</p>
+          <PriceTJ price={price} currency='$' />
         </div>
       </div>
     </div>

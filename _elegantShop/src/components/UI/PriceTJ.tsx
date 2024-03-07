@@ -8,14 +8,14 @@ export default function PriceTJ({ price, salePrice, currency }: PriceTJProps) {
     return (
       <div className='flex gap-2 items-center'>
         <div>
-          <h1 className='text-3xl font-semibold'>
+          <p className='mt-1 text-sm font-semibold'>
             {currency} {salePrice.toFixed(2)}
-          </h1>
+          </p>
         </div>
         <div>
-          <h1 className='line-through text-2xl font-semibold text-gray-500 '>
+          <p className='line-through text-2xl font-semibold text-gray-500 '>
             {currency} {price.toFixed(2)}
-          </h1>
+          </p>
         </div>
       </div>
     );
@@ -23,9 +23,9 @@ export default function PriceTJ({ price, salePrice, currency }: PriceTJProps) {
     return (
       <div className='flex gap-2 items-center'>
         <div>
-          <h1 className='text-3xl font-semibold'>
+          <p className='mt-1 text-sm font-semibold'>
             {currency} {price.toFixed(2)}
-          </h1>
+          </p>
         </div>
       </div>
     );
