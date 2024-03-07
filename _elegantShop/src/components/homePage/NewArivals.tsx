@@ -15,14 +15,14 @@ export default function NewArivals() {
           <span>
             <img
               className='w-[18px] h-[18px]'
-              src='/HomePageImages/NotActiveElement.png'
+              src='/HomePageImages/notActiveDot.png'
               alt='not active nav dot'
             />
           </span>
           <span>
             <img
               className='w-[18px] h-[18px]'
-              src='/HomePageImages/NotActiveElement.png'
+              src='/HomePageImages/notActiveDot.png'
               alt='not active nav dot'
             />
           </span>
