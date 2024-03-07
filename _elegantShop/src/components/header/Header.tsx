@@ -31,14 +31,27 @@ export default function Header() {
                 <NavLink to={'/'}>Home</NavLink>
               </li>
               <li className='  font-semibold flex justify-between'>
-                Shop <img src='/img/header/arrow-down.svg' alt='view more shop items'></img>
+                Shop{' '}
+                <img
+                  src='/img/header/arrow-down.svg'
+                  alt='view more shop items'
+                ></img>
               </li>
               <li className='  '>
-                <NavLink to={'/shop/1'} className='font-semibold flex justify-between'>
-                  Product <img src='/img/header/arrow-down.svg' alt='view more shop items'></img>
+                <NavLink
+                  to={'/shop/1'}
+                  className='font-semibold flex justify-between'
+                >
+                  Product{' '}
+                  <img
+                    src='/img/header/arrow-down.svg'
+                    alt='view more shop items'
+                  ></img>
                 </NavLink>
               </li>
-              <li className='  font-semibold'>Constact Us</li>
+              <li className='  font-semibold'>
+                <NavLink to={'/contact-us'}>Contact Us</NavLink>
+              </li>
             </ul>
           </div>
           <div className='flex gap-1'>
