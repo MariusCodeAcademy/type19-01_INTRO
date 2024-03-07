@@ -1,13 +1,9 @@
-interface HeaderMenuProps {
-  onMenuClick: () => void;
-}
-
-const HeaderMenu: React.FC<HeaderMenuProps> = ({ onMenuClick }) => {
+export default function HeaderMenu({ onMenuClick = () => {} }) {
   return (
     <div className='p-6'>
       <div className='flex justify-between'>
         <p className='font-semibold'>3legant.</p>
-        <img src='/img/header/Line.svg' onClick={(event) => onMenuClick(event)} className='text-black' alt='' />
+        <img src='/img/header/Line.svg' onClick={onMenuClick} className='text-black' alt='' />
       </div>
       <div className='relative mt-3'>
         <img
@@ -31,7 +27,7 @@ const HeaderMenu: React.FC<HeaderMenuProps> = ({ onMenuClick }) => {
           <li className='border-b py-3 font-semibold flex justify-between'>
             Product <img src='/img/header/arrow-down.svg' alt='view more shop items'></img>
           </li>
-          <li className='border-b py-3 font-semibold'>Contact Us</li>
+          <li className='border-b py-3 font-semibold'>Constact Us</li>
         </ul>
       </div>
       <div className='mt-56'>
@@ -40,7 +36,7 @@ const HeaderMenu: React.FC<HeaderMenuProps> = ({ onMenuClick }) => {
             Cart <img src='/img/header/shoppingbag.svg' alt='view more shop items'></img>
           </li>
           <li className='text-[#6c7275] font-semibold border-b py-3 flex justify-between'>
-            Wishlist <img src='/img/header/heart.svg' alt='view more shop items'></img>
+            Whishlist <img src='/img/header/heart.svg' alt='view more shop items'></img>
           </li>
         </ul>
         <button className='w-full border rounded-md bg-[#232627] py-4 text-white' type='button'>
@@ -60,4 +56,4 @@ const HeaderMenu: React.FC<HeaderMenuProps> = ({ onMenuClick }) => {
       </div>
     </div>
   );
-};
+}

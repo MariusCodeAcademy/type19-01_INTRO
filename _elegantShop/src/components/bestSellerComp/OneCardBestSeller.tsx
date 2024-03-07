@@ -1,11 +1,18 @@
 import PricingTs from '../UI/PricingTs';
 import RatingsST from '../UI/RatingsST';
 
-export default function OneCardBestSeller({ name, price, soldPrice }: { name: string; price: number; soldPrice?: number }) {
+type BestSellerProps = {
+  name: string;
+  price: number;
+  soldPrice?: number;
+  img: string;
+};
+
+export default function OneCardBestSeller({ name, price, soldPrice, img }: BestSellerProps) {
   return (
-    <div className='w-40 h-72'>
-      <div className='Elements w-44 h-52 relative'>
-        <img className='w-full h-full bg-red-50' src='/public/imgBest Seller/d2eda88ccb4cc71f499a5d94c2a5bd61.png' alt='sony casque' />
+    <div className='lg:w-[262px] lg:h-[459px] sm:w-[152px] sm:lg:h-[281px] '>
+      <div className='Elements w-full relative'>
+        <img className='lg:w-[262px] sm:w-[152px] lg:h-[349px] sm:h-[203px] bg-red-50 object-contain' src={img} alt='sony casque' />
         <div className='pill absolute top-5 left-5 px-3 py-1  bg-white rounded'>
           <p className='font-bold text-base	'>HOT</p>
         </div>
