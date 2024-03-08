@@ -12,7 +12,6 @@ import ContactForm from '../components/ContactFormST/ContactForm';
 import NewsLetter from '../components/NewsLetter';
 import Header from '../components/header/Header';
 
-
 function HomePage() {
   return (
     <div>
@@ -24,8 +23,6 @@ function HomePage() {
       <Banner />
       <NewArivals />
       <ShopCollection />
-      <TimerST />
-      <ContactForm />
       <IceBoxCard />
       <Instagram />
       <NewsLetter />
