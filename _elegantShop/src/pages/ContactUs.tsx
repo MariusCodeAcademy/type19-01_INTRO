@@ -1,3 +1,4 @@
+import AboutUs from '../components/AboutUs/AboutUs';
 import ContactForm from '../components/ContactFormST/ContactForm';
 import ContactUsCards from '../components/ContactUs/ContactUsCards';
 
@@ -8,6 +9,7 @@ function ContactUs() {
     <div>
       <Header />
 
+      <AboutUs />
       <ContactUsCards />
       <ContactForm />
     </div>
