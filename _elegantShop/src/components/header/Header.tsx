@@ -65,15 +65,24 @@ export default function Header({ main }: HeaderProps) {
             {/* main menu items */}
             <ul className='flex items-center gap-4'>
               {meniuItems.map((mObj) => (
-                <li key={mObj.id} className='font-semibold'>
-                  <NavLink
-                    to={mObj.url}
-                    className={mObj.children && mObj.children.length ? 'flex justify-between' : ''}>
-                    {mObj.name}{' '}
-                    {mObj.children ? (
-                      <img src='/img/header/arrow-down.svg' alt='view more shop items'></img>
-                    ) : null}
-                  </NavLink>
+                <li
+                  key={mObj.id}
+                  className={
+                    mObj.children?.length ? 'flex justify-between font-semibold' : 'font-semibold'
+                  }>
+                  <NavLink to={mObj.url}>{mObj.name}</NavLink>
+                  {mObj.children ? (
+                    <img src='/img/header/arrow-down.svg' alt='view more shop items'></img>
+                  ) : null}
+                  {mObj.children?.length && (
+                    <ul className='submenu absolute left-0 right-0 top-full mt-4 bg-white border-2  place-items-center p-4 gap-3 hidden'>
+                      {mObj.children?.map((subObj) => (
+                        <NavLink key={subObj.id} to={subObj.url}>
+                          {subObj.name}
+                        </NavLink>
+                      ))}
+                    </ul>
+                  )}
                 </li>
               ))}
             </ul>
