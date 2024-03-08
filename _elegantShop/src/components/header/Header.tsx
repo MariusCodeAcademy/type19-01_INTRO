@@ -40,7 +40,7 @@ type HeaderProps = {
 
 export default function Header({ main }: HeaderProps) {
   const [menuClicked, setMenuClicked] = useState(false);
-  const [openSubMenu, setOpenSubMenu] = useState(2);
+  const [openSubMenu, setOpenSubMenu] = useState(0);
 
   function handleMenuClick() {
     setMenuClicked(!menuClicked);
