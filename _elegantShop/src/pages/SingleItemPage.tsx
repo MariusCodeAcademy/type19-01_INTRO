@@ -3,13 +3,14 @@ import ProductImgSection from '../components/ProductImageSection/ProductImgSecti
 import Header from '../components/header/Header';
 import ProdInfo from '../components/productInfo/ProdInfo';
 
-
 const SingleItemPage = () => {
   return (
-    <div> 
+    <div>
       <Header />
-      <ProductImgSection />
-      <ProdInfo />
+      <div className='grid grid-cols-1 gap-16 md:grid-cols-2'>
+        <ProductImgSection />
+        <ProdInfo />
+      </div>
     </div>
   );
 };
