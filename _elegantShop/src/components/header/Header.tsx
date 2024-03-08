@@ -18,7 +18,10 @@ export default function Header({ main }: HeaderProps) {
       {menuClicked && <HeaderMenu onMenuClick={handleMenuClick} />}
       {!menuClicked && (
         <header
-          className={`flex z-50 relative  px-8 py-4 justify-between ${main ? 'bg-main' : ''} `}>
+          className={`flex z-50 relative  px-8 py-4 justify-between ${
+            main ? 'bg-main' : ''
+          } `}
+        >
           <div className='flex '>
             <img
               onClick={handleMenuClick}
@@ -36,15 +39,29 @@ export default function Header({ main }: HeaderProps) {
                 <NavLink to={'/'}>Home</NavLink>
               </li>
               <li className='  font-semibold flex justify-between'>
-                Shop <img src='/img/header/arrow-down.svg' alt='view more shop items'></img>
+                Shop{' '}
+                <img
+                  src='/img/header/arrow-down.svg'
+                  alt='view more shop items'
+                ></img>
               </li>
               <li className='  '>
-                <NavLink to={'/shop/1'} className='font-semibold flex justify-between'>
-                  Product <img src='/img/header/arrow-down.svg' alt='view more shop items'></img>
+                <NavLink
+                  to={'/shop/1'}
+                  className='font-semibold flex justify-between'
+                >
+                  Product{' '}
+                  <img
+                    src='/img/header/arrow-down.svg'
+                    alt='view more shop items'
+                  ></img>
                 </NavLink>
               </li>
               <li className='  font-semibold'>
                 <NavLink to={'/contact-us'}>Contact Us</NavLink>
+              </li>
+              <li className='  font-semibold'>
+                <NavLink to={'/blog'}>Our Blog</NavLink>
               </li>
             </ul>
           </div>
