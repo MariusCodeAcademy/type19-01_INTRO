@@ -7,8 +7,6 @@ import TimeUntilMK from '../components/UI/TimeUntilMK';
 import Instagram from '../components/instagram/Instagram';
 import IceBoxCard from '../components/cards/IceBoxCard';
 import SwiperDemo from '../components/UI/SwiperDemo';
-import TimerST from '../components/TimerST/TimerST';
-import ContactForm from '../components/ContactFormST/ContactForm';
 import NewsLetter from '../components/NewsLetter';
 import Header from '../components/header/Header';
 
@@ -19,10 +17,10 @@ function HomePage() {
       <Hero />
       <TimeUntilMK timeUntil='2024-12-31' title='New Year: ' />
       <SwiperDemo />
-      <BestSellerPage />
-      <Banner />
       <NewArivals />
       <ShopCollection />
+      <BestSellerPage />
+      <Banner />
       <IceBoxCard />
       <Instagram />
       <NewsLetter />
