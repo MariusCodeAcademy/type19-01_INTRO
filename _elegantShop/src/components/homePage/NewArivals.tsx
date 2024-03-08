@@ -86,7 +86,7 @@ export default function NewArivals() {
         <div className='flex overflow-hidden xl:gap-6 gap-2'>
           {products.map((pObj) => {
             return (
-              <SwiperSlide className=''>
+              <SwiperSlide className='w-[231px] h-[412px] mb-4 md:w-[262px] md:h-[433px]'>
                 <Card key={pObj.id} price={pObj.price} img={pObj.img} rating={pObj.rating} />
               </SwiperSlide>
             );
