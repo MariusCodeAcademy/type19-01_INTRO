@@ -40,9 +40,17 @@ type HeaderProps = {
 
 export default function Header({ main }: HeaderProps) {
   const [menuClicked, setMenuClicked] = useState(false);
+  const [openSubMenu, setOpenSubMenu] = useState(2);
 
   function handleMenuClick() {
     setMenuClicked(!menuClicked);
+  }
+
+  function handleSubmenuShow(id: number) {
+    if (openSubMenu === id) {
+      return setOpenSubMenu(0);
+    }
+    setOpenSubMenu(id);
   }
   return (
     <>
@@ -72,10 +80,15 @@ export default function Header({ main }: HeaderProps) {
                   }>
                   <NavLink to={mObj.url}>{mObj.name}</NavLink>
                   {mObj.children ? (
-                    <img src='/img/header/arrow-down.svg' alt='view more shop items'></img>
+                    <img
+                      onClick={() => handleSubmenuShow(mObj.id)}
+                      src='/img/header/arrow-down.svg'
+                      alt='view more shop items'></img>
                   ) : null}
                   {mObj.children?.length && (
-                    <ul className='submenu absolute left-0 right-0 top-full mt-4 bg-white border-2  place-items-center p-4 gap-3 hidden'>
+                    <ul
+                      className={`submenu absolute left-0 right-0 top-full mt-4 bg-white border-2  place-items-center p-4 gap-3 
+                    ${openSubMenu === mObj.id ? 'grid' : 'hidden'}`}>
                       {mObj.children?.map((subObj) => (
                         <NavLink key={subObj.id} to={subObj.url}>
                           {subObj.name}
