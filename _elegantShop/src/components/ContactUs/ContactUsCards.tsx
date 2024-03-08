@@ -3,8 +3,10 @@ import ContactUsOneCard from './ContactUsOneCard';
 function ContactUsCards() {
   return (
     <div>
-      <h2 className='mb-10 font-bold text-xl text-center'>Contact Us</h2>
-      <div className='mx-8 flex flex-col gap-4'>
+      <h2 className='mb-10 font-bold text-xl text-center md:text-5xl'>
+        Contact Us
+      </h2>
+      <div className='mx-8 grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-6'>
         <ContactUsOneCard
           src='/images/store 01.svg'
           alt='Parduotuve'
