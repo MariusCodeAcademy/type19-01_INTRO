@@ -1,4 +1,13 @@
-export const itemsArr = [
+export interface BestSellerIf {
+  id: number;
+  name: string;
+  rating: number;
+  category: string;
+  price: number;
+  image: string;
+}
+
+export const itemsArr: BestSellerIf[] = [
   {
     id: 1,
     name: 'Sony - WH-1000XM5 Wireless ',
